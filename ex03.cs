@@ -1,29 +1,29 @@
-/* Dado dois números, imprimir somente o maior deles
-*/
-
-
+//Faça um programa para ler os coeficientes de uma equação do primeiro grau (ax + b = 0),
+//calcular e escrever a raiz da equação
 using System;
 
-class Program
+class Program 
 {
-    public static void Main(string[] args)
+  public static void Main (string[] args) 
+  {
+
+    Console.WriteLine("Digite o coeficiente 'a': "); //Usuario digita o coefince a 
+    double a = Convert.ToDouble(Console.ReadLine()); //Converte de string para double 
+
+    Console.WriteLine("Digite o coeficiente 'b': "); //Usuraio digita o coeficiente b
+    double b = Convert.ToDouble(Console.ReadLine()); //Converte novamente
+
+    if (a != 0) //Se o (a) for diferente de 0 ele vai calcular a raiz e exibir o resultado
     {
-
-        int num, num2; //Variables declaradas
-
-        Console.WriteLine("Digte um número: ");  //User insere o nnumero desejado
-        num = Convert.ToInt32(Console.ReadLine()); //Converte de string para int
-
-        Console.WriteLine("Digite outro núemro: ");//User insere o 2 numero
-        num2 = Convert.ToInt32(Console.ReadLine()); // Converte e armazena
-
-        Console.WriteLine("O maior núemro é: " + Math.Max(num, num2));
-        //Mensagem para exbir numero, a função Math.Max(coloquei as variaveis inseridas)
-        //Ela mostra o maior entre dois números  
-        Console.ReadLine();
-        //So pra nao fechar a window
-
-
+        double raiz = (-b / a); //Essa é a formula para calcular a raiz 
+        Console.WriteLine("A raiz da equacao é: " + raiz); //Exibila 
+    }
+    else
+    {
+        Console.WriteLine("Essa equacao não é do 1 grau "); //Caso o (a) = 0 , essa equacao nao é do 1 grau 
 
     }
-}
+    Console.ReadLine(); //So pra nao fechar a janela
+
+    }
+  }
