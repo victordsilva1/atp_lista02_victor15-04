@@ -6,7 +6,7 @@ valores a serem cobrados são os seguintes:
 • 50 reais se o motorista ultrapassar em até 10km/h a velocidade permitida (ex: se a
 velocidade máxima for 50km/h e o motorista estiver a 60km/h ou a 56km/h);
 • 100 reais, se o motorista ultrapassar de 11km/h a 30km/h a velocidade permitida;
-• 200 reais, se estiver acima de 30km/h da velocidade permitida.
+• 200 reais, se estiver acima de 30km/h da velocidade permitida
 */
 using System;
 
