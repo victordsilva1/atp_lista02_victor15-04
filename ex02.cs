@@ -1,29 +1,36 @@
-/* Dado dois números, imprimir somente o maior deles
-*/
-
-
+/*Faça um algoritmo que leia 2 números inteiros e faça sua adição. Se o resultado for maior
+ou igual a 10, some 5 a este número. Caso contrário some 7 a ele. Imprima o resultado
+final.*/
 using System;
 
-class Program
+class Program 
 {
-    public static void Main(string[] args)
-    {
+  public static void Main (string[] args) 
+  {
 
-        int num, num2; //Variables declaradas
+int num1, num2, sum, sum10, sum7;
 
-        Console.WriteLine("Digte um número: ");  //User insere o nnumero desejado
-        num = Convert.ToInt32(Console.ReadLine()); //Converte de string para int
+Console.WriteLine("Digite um número: ");
+num1 = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite outro núemro: ");//User insere o 2 numero
-        num2 = Convert.ToInt32(Console.ReadLine()); // Converte e armazena
+Console.WriteLine("Digite outro numero: ");
+num2 = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("O maior núemro é: " + Math.Max(num, num2));
-        //Mensagem para exbir numero, a função Math.Max(coloquei as variaveis inseridas)
-        //Ela mostra o maior entre dois números  
-        Console.ReadLine();
-        //So pra nao fechar a window
+sum = num1 + num2;
 
+Console.WriteLine("A soma dos dois é " + sum);
 
-
-    }
+if (sum >= 10)
+{
+    sum10 = sum + 5;
+    Console.WriteLine("O resultado somado com 5 é: " + sum10);
 }
+else 
+{
+    sum7 = sum + 7;
+    Console.WriteLine("O resultado somado com 7 é: " + sum7);
+}
+
+Console.ReadLine();
+  }
+}  
